@@ -1,0 +1,21 @@
+<html>
+
+<box id="log"></box>
+
+<script>
+
+
+console.log = (...e) => {
+log.innerHTML += e;
+}
+
+fetch('https://raw.githubusercontent.com/helloworld-dada/github.io/main/hhh.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
+
+    
+    </script>
+
+</html>
